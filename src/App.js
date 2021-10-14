@@ -1,5 +1,11 @@
 import React, {Component} from "react";
 
+//Components
+// Component is very similar to function, it helps write reusable code
+// Components allow you to create the basic structure once and resuse as many time as u wants 
+// There are two types of components 
+// 1.class Component 
+// 2.function Component
 
 // ------------------------------Session 1------------------------------
 // In this tutorial we're going to learn about Class Components as well as JSX. 
@@ -7,13 +13,13 @@ import React, {Component} from "react";
 // which allows us to more easily develop UI due to the fact of its similarity with HTML. 
 // Components allow us to break down our webpage into smaller reusable pieces of UI.
 
-// class App extends Component{
-//     render(){
-//         return <>
-//         <h1>App Component</h1>
-//         <h3>App Component</h3>
-//         </>
-//     }
+class App extends Component{
+    render(){
+        return <>
+        <h1>App Component</h1>
+        <h3>App Component</h3>
+        </>
+    }
 
     //------------fragment-----------------
     // render(){
@@ -241,53 +247,157 @@ import React, {Component} from "react";
 // }
 
 //function component
-function A(props){
-    console.log(props)
-    // props.firstName = "salim"; //props are immutable i.e read only property , we cannot change props
-    return(
-        <div>
-            <h1>Hello I am function component A</h1>
-            <h2>{props.firstName}</h2>
-            <h2>{props.lastName}</h2>
-        </div>
-    )
-}
+// function A(props){
+//     console.log(props)
+//     // props.firstName = "salim"; //props are immutable i.e read only property , we cannot change props
+//     return(
+//         <div>
+//             <h1>Hello I am function component A</h1>
+//             <h2>{props.firstName}</h2>
+//             <h2>{props.lastName}</h2>
+//         </div>
+//     )
+// }
 
-const B = (props)=>{
-    return(
-        <div>
-            <h1>Hello I am function component A</h1>
-            <h2>{props.name}</h2>
-        </div>
-    )
-}
+// const B = (props)=>{
+//     return(
+//         <div>
+//             <h1>Hello I am function component A</h1>
+//             <h2>{props.name}</h2>
+//         </div>
+//     )
+// }
 
-class C extends Component{
-    render(){
-        console.log(this.props);
-        const {age, someMath, someArray} = this.props;
-        return(
-            <div>
-                <h1>Hello I am class component C</h1>
-                <h2>{age}</h2>
-                <h2>{someMath}</h2>
-                <h2>{someArray}</h2>
-            </div>
-        )
-    }
-}
-class App extends Component{
-    render(){
-        return (
-        <>
-            <h1>Hello I am Class Component</h1>
-            <A firstName="Haris" lastName="xyz"/>
-            <B name="Aquib"/>
-            <C age={23} someMath={1 + 3} someArray={[1, 2, 3]}/>
-        </>
-        )
-    }
+// class C extends Component{
+//     render(){
+//         console.log(this.props);
+//         const {age, someMath, someArray} = this.props;
+//         return(
+//             <div>
+//                 <h1>Hello I am class component C</h1>
+//                 <h2>{age}</h2>
+//                 <h2>{someMath}</h2>
+//                 <h2>{someArray}</h2>
+//             </div>
+//         )
+//     }
+// }
+// class App extends Component{
+//     render(){
+//         return (
+//         <>
+//             <h1>Hello I am Class Component</h1>
+//             <A firstName="Haris" lastName="xyz"/>
+//             <B name="Aquib"/>
+//             <C age={23} someMath={1 + 3} someArray={[1, 2, 3]}/>
+//         </>
+//         )
+//     }
+
+// }
+
+
+// In this session, we are going to be going over State within Class Based Components. 
+// Now what state is, is an object that belongs to the component. 
+// This object can be changed through a method called setState. 
+// When changes are detected, this triggers a re-render which updates the UI. 
+// An Event Handler is just a function that executes when an event occurs.
+
+//states and setState
+// class App extends Component {
+//     constructor(props) {
+//       super(props);
+//       this.state = {
+//         counter: 0
+//       };
+//     }
+
+//     incrementCounter() {
+//         this.setState({counter: this.state.counter + 1})
+//     }
+
+//     incrementCounter = () =>{
+//         this.setState({counter: this.state.counter + 1})
+//     }
+
+//     render() {
+//       return (
+//         <div>
+//           <h1>Hello state</h1>
+//           <h2>counter : {this.state.counter}</h2>
+//           <button type="button" onClick={() => {this.setState({counter: this.state.counter + 1})}}>Click Me 1</button>
+//           <button type="button" onClick={this.incrementCounter.bind(this)}>Click Me 2</button>
+//           <button type="button" onClick={this.incrementCounter}>Click Me 3</button>
+//         </div>
+//       );
+//     }
+//   }
+
+// class App extends Component {
+//     constructor(props) {
+//       super(props);
+//       this.state = {
+//         brand: "Ford",
+//         model: "Mustang",
+//         color: "red",
+//         year: 1964
+//       };
+//     }
+//     changeColor = () => {
+//       this.setState({color: "blue"});
+//     }
+//     render() {
+//       return (
+//         <div>
+//           <h1>My {this.state.brand}</h1>
+//           <p>
+//             It is a {this.state.color}
+//             {this.state.model}
+//             from {this.state.year}.
+//           </p>
+//           <button type="button" onClick={this.changeColor}>Change color</button>
+//         </div>
+//       );
+//     }
+//   }
+
+
+// how we can go about updating the Parent State from the Child Component. 
+// We can accomplish this by passing a handler down as a prop to the Child Component. 
+// The Child Component can then invoke that handler to update the Parent Components State. 
+
+// class App extends Component {
+//     constructor(props) {
+//       super(props);
+//       this.state = {
+//         counter: 0
+//       };
+//     }
+
+//     incrementCounter = () =>{
+//         this.setState({counter: this.state.counter + 1})
+//     }
+
+//     render() {
+//       return (
+//         <div>
+//           <h1>Hello state</h1>
+//           <h2>counter : {this.state.counter}</h2>
+//           <Child incrementCounter={this.incrementCounter}/>
+//         </div>
+//       );
+//     }
+//   }
+
+//   const Child = ({incrementCounter}) => {
+//       return (
+//           <div>
+//                 <h1>Child Component</h1>
+//                 <button type="button" onClick={() => {incrementCounter(10)}}>Click Me 3</button>
+//                 <button type="button" onClick={incrementCounter.bind(this, 10)}>Click Me 3</button>
+//           </div>
+//       )
+//   }
 
 }
-
 export default App;
