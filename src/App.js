@@ -10,6 +10,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import Blog from "./Blog";
 import Contact from "./Contact";
+import FunctionHooks from "./FunctionHooks";
+
 
 
 class App extends Component{
@@ -21,10 +23,11 @@ class App extends Component{
         {/* <ConditionalRendering/> */}
         {/* <ListRendering/> */}
         {/* <Styling/> */}
+        <FunctionHooks/>
 
 
 {/* npm install react-router-dom */}
-        <Router>
+        {/* <Router>
             <div>
                 <Link to="/">Home</Link>
             </div>
@@ -48,7 +51,7 @@ class App extends Component{
                     <Contact />
                 </Route>
             </Switch>
-        </Router>
+        </Router> */}
         </>
     }
 

@@ -235,7 +235,7 @@ class ClassAndFunctions extends Component{
 //         <h1>Hello I am arrow function component B</h1>
 //     )
 // }
-// class App extends Component{
+// class ClassAndFunctions extends Component{
 //     render(){
 //         return <>
 //         <h1>Hello I am Class Component</h1>
@@ -282,7 +282,7 @@ class ClassAndFunctions extends Component{
 //         )
 //     }
 // }
-// class App extends Component{
+// class ClassAndFunctions extends Component{
 //     render(){
 //         return (
 //         <>
@@ -304,7 +304,7 @@ class ClassAndFunctions extends Component{
 // An Event Handler is just a function that executes when an event occurs.
 
 //states and setState
-// class App extends Component {
+// class ClassAndFunctions extends Component {
 //     constructor(props) {
 //       super(props);
 //       this.state = {
@@ -333,7 +333,7 @@ class ClassAndFunctions extends Component{
 //     }
 //   }
 
-// class App extends Component {
+// class ClassAndFunctions extends Component {
 //     constructor(props) {
 //       super(props);
 //       this.state = {
@@ -366,7 +366,7 @@ class ClassAndFunctions extends Component{
 // We can accomplish this by passing a handler down as a prop to the Child Component. 
 // The Child Component can then invoke that handler to update the Parent Components State. 
 
-// class App extends Component {
+// class ClassAndFunctions extends Component {
 //     constructor(props) {
 //       super(props);
 //       this.state = {
