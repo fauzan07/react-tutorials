@@ -22,7 +22,8 @@ const PropTypeEx = () => {
             x={123}
             y={123223333}
             array={[1, 2, 3, 6]}
-            arrayObject={{firstName : "Salim", lastName : "Ansari"}}/>
+            // arrayObject={{firstName : "Salim", lastName : "Ansari"}}
+            />
         </div>
     );
 }
@@ -59,9 +60,9 @@ A.prototype = {
     x : PropTypes.oneOf(["x",123]),
     y : PropTypes.oneOfType([PropTypes.number,PropTypes.bool]),
     array : PropTypes.arrayOf(PropTypes.string),
-    arrayObject : PropTypes.arrayOf({
-        firstName : PropTypes.string, lastName : PropTypes.string
-    }),
+    // arrayObject : PropTypes.arrayOf({
+    //     firstName : PropTypes.string, lastName : PropTypes.string
+    // }),
 
 }
 
