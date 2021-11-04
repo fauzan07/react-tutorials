@@ -20,16 +20,16 @@ class ListRendering extends Component {
       return (
         <div>
           <h1>Hello state</h1>
-            <ul>
+            {/* <ul>
                 <li>Dish name is {this.state.dish[0].name}, Price is {this.state.dish[0].price}</li>
                 <li>Dish name is {this.state.dish[1].name}, Price is {this.state.dish[1].price}</li>
                 <li>Dish name is {this.state.dish[2].name}, Price is {this.state.dish[2].price}</li>
-            </ul>
+            </ul> */}
 
             <ul>
               {dish.map((item)=>{
                 return(
-                  <li>Dish name is {item.name}, Price is {item.price}</li>
+                  <li  key={item.id}>Dish name is {item.name}, Price is {item.price}</li>
                 )
               })}
             </ul>

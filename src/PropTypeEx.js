@@ -21,7 +21,7 @@ const PropTypeEx = () => {
             person2={{firstName : "Aquib", lastName : "Nakwa", age : 23}}
             x={123}
             y={123223333}
-            array={[1, 2, 3, 6]}
+            array={["1", "2", "3", "6"]}
             // arrayObject={{firstName : "Salim", lastName : "Ansari"}}
             />
         </div>

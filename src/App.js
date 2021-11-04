@@ -11,6 +11,7 @@ import Home from "./Home";
 import Blog from "./Blog";
 import Contact from "./Contact";
 import FunctionHooks from "./FunctionHooks";
+import PropTypeEx from "./PropTypeEx";
 
 
 
@@ -22,8 +23,9 @@ class App extends Component{
         {/* <EventHandler/> */}
         {/* <ConditionalRendering/> */}
         {/* <ListRendering/> */}
-        {/* <Styling/> */}
-        <FunctionHooks/>
+        <Styling/>
+        {/* <FunctionHooks/> */}
+        {/* <PropTypeEx/> */}
 
 
 {/* npm install react-router-dom */}
