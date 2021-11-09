@@ -12,6 +12,7 @@ import Blog from "./Blog";
 import Contact from "./Contact";
 import FunctionHooks from "./FunctionHooks";
 import PropTypeEx from "./PropTypeEx";
+import ErrorBounderiesEx from "./ErrorBounderiesEx";
 
 
 
@@ -23,9 +24,10 @@ class App extends Component{
         {/* <EventHandler/> */}
         {/* <ConditionalRendering/> */}
         {/* <ListRendering/> */}
-        <Styling/>
+        {/* <Styling/> */}
         {/* <FunctionHooks/> */}
         {/* <PropTypeEx/> */}
+        <ErrorBounderiesEx/>
 
 
 {/* npm install react-router-dom */}
