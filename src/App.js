@@ -13,6 +13,7 @@ import Contact from "./Contact";
 import FunctionHooks from "./FunctionHooks";
 import PropTypeEx from "./PropTypeEx";
 import ErrorBounderiesEx from "./ErrorBounderiesEx";
+import RefsEx from "./RefsEx";
 
 
 
@@ -27,7 +28,8 @@ class App extends Component{
         {/* <Styling/> */}
         {/* <FunctionHooks/> */}
         {/* <PropTypeEx/> */}
-        <ErrorBounderiesEx/>
+        {/* <ErrorBounderiesEx/> */}
+        <RefsEx />
 
 
 {/* npm install react-router-dom */}
