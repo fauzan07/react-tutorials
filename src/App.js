@@ -28,8 +28,8 @@ class App extends Component{
         {/* <Styling/> */}
         {/* <FunctionHooks/> */}
         {/* <PropTypeEx/> */}
-        {/* <ErrorBounderiesEx/> */}
-        <RefsEx />
+        <ErrorBounderiesEx/>
+        {/* <RefsEx /> */}
 
 
 {/* npm install react-router-dom */}
