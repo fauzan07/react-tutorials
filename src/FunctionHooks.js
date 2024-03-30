@@ -1,23 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // class ClassAndFunctions extends Component {
 //     constructor(props) {
 //       super(props);
 //       this.state = {
-//         counter: 0
+//         counters: 0
 //       };
 //     }
 
 //     incrementCounter = () =>{
-//         this.setState({counter: this.state.counter + 1})
+//         this.setState({counters: this.state.counters + 1})
 //     }
 
 //     render() {
 //       return (
 //         <div>
 //           <h1>Hello state</h1>
-//           <h2>counter : {this.state.counter}</h2>
-//           <Child incrementCounter={this.incrementCounter}/>
+//           <h2>counter : {this.state.counters}</h2>
+//           <button type="button" onClick={this.incrementCounter}>Click Me 3</button>
 //         </div>
 //       );
 //     }
@@ -32,15 +32,15 @@ import React, { useState } from 'react';
 
 function FunctionHooks() {
   // Declare a new state variable, which we'll call "count"
-    const [count, setCount] = useState(0);
+    const [counter, setCounter] = useState(0);
 
     const incrementCounter = () =>{
-        setCount(count + 1)
+        setCounter(counter + 1)
     }
 
     return (
         <div>
-        <p>You clicked {count} times</p>
+        <p>You clicked {counter} times</p>
         <button onClick={incrementCounter}>
             Click me
         </button>

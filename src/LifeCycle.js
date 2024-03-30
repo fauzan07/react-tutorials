@@ -1,53 +1,37 @@
-import React, { Component } from 'react'
-// import LifecycleB from './LifecycleB'
+import React, { Component } from 'react';
 
 class Lifecycle extends Component {
-	constructor(props) {
-		super(props)
-		this.state = {
-			name: 'Vishwas'
-		}
-		console.log('LifecycleA constructor')
-	}
+  constructor(props) {
+    super(props);
+    console.log('Constructor called');
+    this.state = {
+      counter: 0
+    };
+  }
 
-	static getDerivedStateFromProps(props, state) {
-		console.log('LifecycleA getDerivedStateFromProps')
-		return null
-	}
+  componentDidMount() {
+    console.log('Component did mount');
+  }
 
-	componentDidMount() {
-		console.log('LifecycleA componentDidMount')
-	}
+  componentDidUpdate(prevProps, prevState) {
+    console.log('Component did update');
+  }
 
-	// shouldComponentUpdate() {
-	// 	console.log('LifecycleA shouldComponentUpdate')
-	// 	return true
-	// }
+  componentWillUnmount() {
+    console.log('Component will unmount');
+  }
 
-	// getSnapshotBeforeUpdate(prevProps, prevState) {
-	// 	console.log('LifecycleA getSnapshotBeforeUpdate')
-    // return null
-	// }
-
-	// componentDidUpdate(prevProps, prevState, snapshot) {
-	// 	console.log('LifecycleA componentDidUpdate')
-	// }
-
-	// changeState = () => {
-	// 	this.setState({
-	// 		name: 'Codevolution'
-	// 	})
-	// }
-
-	render() {
-		console.log('LifecycleA render')
-		return (
-			<div>
-				{/* <button onClick={this.changeState}>Change state</button> */}
-				LifecycleA
-			</div>
-		)
-	}
+  render() {
+    console.log('Render called');
+    return (
+      <div>
+        <p>Counter: {this.state.counter}</p>
+        <button onClick={() => this.setState({ counter: this.state.counter + 1 })}>
+          Increment Counter
+        </button>
+      </div>
+    );
+  }
 }
 
-export default Lifecycle
+export default Lifecycle;

@@ -22,7 +22,7 @@ const RefsEx = () => {
                 <br/>
                 <button>Submit</button>
             </form>
-            <p>{show ? `your lucky name is ${luckyName.current.value}` : ""}</p>
+            <p>{show ? `your lucky name is ${luckyName.current.value}` : "no value "}</p>
         </div>
     )
 }

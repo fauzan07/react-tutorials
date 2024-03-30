@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import Context from './Context';
+import MyContext from './Context';
 
 
 const Contact = () => {
+
+  // const value = useContext(MyContext)
   
   return (
+    // <MyContext.Consumer>
+    //  {value => <h1>{value.MyData}</h1>}
+    // </MyContext.Consumer>
     <>
-      <h1>Hello Contact !</h1>
+    {/* {value.MyData} */}
     </>
   );
 }

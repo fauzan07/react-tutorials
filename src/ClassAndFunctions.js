@@ -13,13 +13,15 @@ import React, {Component} from "react";
 // which allows us to more easily develop UI due to the fact of its similarity with HTML. 
 // Components allow us to break down our webpage into smaller reusable pieces of UI.
 
-class ClassAndFunctions extends Component{
-    render(){
-        return <>
-        <h1>App Component</h1>
-        <h3>App Component</h3>
-        </>
-    }
+// class ClassAndFunctions extends Component{
+//     render(){
+//         return (
+//         <>
+//           <h1>App Component</h1>
+//           <h3>App Component</h3>
+//         </>
+//         )
+//     }
 
     //------------fragment-----------------
     // render(){
@@ -101,115 +103,115 @@ class ClassAndFunctions extends Component{
     //     }
 
     //---------------conditional expresion in react jsx------------------
-    //     add(num1, num2){
-    //         return num1 + num2;
-    //     }
+      //   add(num1, num2){
+      //       return num1 + num2;
+      //   }
 
-    //   render(){
-    //     const num1 = 1;
-    //     const num2 = 2;
-    //     const someObj = {name : "Salim", age : "25"}
-    //          return (
-    //         <>
-    //             <h1>App Component</h1>
-    //             <h3>testing js code</h3>
-    //             <span>{1 + 1}</span><br/>
-    //             <span>{num1 + num2}</span>
-    //             <h2>{new Date().toLocaleString()}</h2>
-    //             <h2>{this.add(1,1)}</h2>
-    //             <h1>My Name is {someObj.name}, my age is {someObj.age}</h1>
-    //             {3 > 2 ? "3 is bigger than 2" : "its not"}
-    //             {true && <h1>Thing i want to render</h1>}
-    //         </>
-    //         )
-    //     }
+      // render(){
+      //   const num1 = 1;
+      //   const num2 = 2;
+      //   const someObj = {name : "Salim", age : "25", gender : "male"}
+      //        return (
+      //       <>
+      //           <h1>App Component</h1>
+      //           <h3>testing js code</h3>
+      //           <span>{1 + 1}</span><br/>
+      //           <span>{num1 + num2}</span>
+      //           <h2>{new Date().toLocaleString()}</h2>
+      //           <h2>{this.add(1,1)}</h2>
+      //           <h1>My Name is {someObj.name}, my age is {someObj.age} my gender is {someObj.gender}</h1>
+      //           {3 > 2 ? "3 is bigger than 2" : "its not"}
+      //           {true && <h1>Thing i want to render</h1>}
+      //       </>
+      //       )
+      //   }
 
     //------------------return jsx in jsx via function-------------------------
-    //     add(num1, num2){
-    //         return num1 + num2;
-    //     }
+      //   add(num1, num2){
+      //       return num1 + num2;
+      //   }
 
-    //     someJSX(){
-    //         return (
-    //             <>
-    //                 <ul>
-    //                     <li>Jsx List 1</li>
-    //                     <li>Jsx List 2</li>
-    //                     <li>Jsx List 3</li>
-    //                 </ul>
-    //             </>
-    //         )
-    //     }
+      //   someJSX(){
+      //       return (
+      //           <>
+      //               <ul>
+      //                   <li>Jsx List 1</li>
+      //                   <li>Jsx List 2</li>
+      //                   <li>Jsx List 3</li>
+      //               </ul>
+      //           </>
+      //       )
+      //   }
 
-    //   render(){
-    //     const num1 = 1;
-    //     const num2 = 2;
-    //     const someObj = {name : "Salim", age : "25"}
-    //          return (
-    //         <>
-    //             <h1>App Component</h1>
-    //             <h3>testing js code</h3>
-    //             <span>{1 + 1}</span><br/>
-    //             <span>{num1 + num2}</span>
-    //             <h2>{new Date().toLocaleString()}</h2>
-    //             <h2>{this.add(1,1)}</h2>
-    //             <h1>My Name is {someObj.name}, my age is {someObj.age}</h1>
-    //             {3 > 2 ? "3 is bigger than 2" : "its not"}
-    //             {true && <h1>Thing i want to render</h1>}
-    //             {this.someJSX()}
-    //         </>
-    //         )
-    //     }
+      // render(){
+      //   const num1 = 1;
+      //   const num2 = 2;
+      //   const someObj = {name : "Salim", age : "25"}
+      //        return (
+      //       <>
+      //           <h1>App Component</h1>
+      //           <h3>testing js code</h3>
+      //           <span>{1 + 1}</span><br/>
+      //           <span>{num1 + num2}</span>
+      //           <h2>{new Date().toLocaleString()}</h2>
+      //           <h2>{this.add(1,1)}</h2>
+      //           <h1>My Name is {someObj.name}, my age is {someObj.age}</h1>
+      //           {3 > 2 ? "3 is bigger than 2" : "its not"}
+      //           {true && <h1>Thing i want to render</h1>}
+      //           {this.someJSX()}
+      //       </>
+      //       )
+      //   }
 
     //------------------conditional rendering in jsx--------------------------
-    //     add(num1, num2){
-    //         return num1 + num2;
-    //     }
+      //   add(num1, num2){
+      //       return num1 + num2;
+      //   }
 
-    //     someJSX(){
-    //         return (
-    //             <>
-    //                 <ul>
-    //                     <li>Jsx List 1</li>
-    //                     <li>Jsx List 2</li>
-    //                     <li>Jsx List 3</li>
-    //                 </ul>
-    //             </>
-    //         )
-    //     }
+      //   someJSX(){
+      //       return (
+      //           <>
+      //               <ul>
+      //                   <li>Jsx List 1</li>
+      //                   <li>Jsx List 2</li>
+      //                   <li>Jsx List 3</li>
+      //               </ul>
+      //           </>
+      //       )
+      //   }
 
-    //     condtionalRendering(){
-    //         if(3 < 0){
-    //             return(
-    //                <h1>3 is greater than 2</h1>
-    //             )
-    //         }else{
-    //             return(
-    //                 <h1>3 is less than 2</h1>
-    //              )
-    //         }
-    //     }
+      //   condtionalRendering(){
+      //       if(3 < 0){
+      //           return(
+      //              <h1>3 is greater than 2</h1>
+      //           )
+      //       }else{
+      //           return(
+      //               <h1>3 is less than 2</h1>
+      //            )
+      //       }
+      //   }
 
-    //   render(){
-    //     const num1 = 1;
-    //     const num2 = 2;
-    //     const someObj = {name : "Salim", age : "25"}
-    //          return (
-    //         <>
-    //             <h1>App Component</h1>
-    //             <h3>testing js code</h3>
-    //             <span>{1 + 1}</span><br/>
-    //             <span>{num1 + num2}</span>
-    //             <h2>{new Date().toLocaleString()}</h2>
-    //             <h2>{this.add(1,1)}</h2>
-    //             <h1>My Name is {someObj.name}, my age is {someObj.age}</h1>
-    //             {3 > 2 ? "3 is bigger than 2" : "its not"}
-    //             {true && <h1>Thing i want to render</h1>}
-    //             {this.someJSX()}
-    //             {this.condtionalRendering()}
-    //         </>
-    //         )
-    //     }
+      // render(){
+      //   const num1 = 1;
+      //   const num2 = 2;
+      //   const someObj = {name : "Salim", age : "25"}
+      //        return (
+      //       <>
+      //           <h1>App Component</h1>
+      //           <h3>testing js code</h3>
+      //           <span>{1 + 1}</span><br/>
+      //           <span>{num1 + num2}</span>
+      //           <h2>{new Date().toLocaleString()}</h2>
+      //           <h2>{this.add(1,1)}</h2>
+      //           <h1>My Name is {someObj.name}, my age is {someObj.age}</h1>
+      //           {3 > 2 ? "3 is bigger than 2" : "its not"}
+      //           {true && <h1>Thing i want to render</h1>}
+      //           {this.someJSX()}
+      //           {this.condtionalRendering()}
+      //       </>
+      //       )
+      //   }
 
 // }
 
@@ -237,19 +239,21 @@ class ClassAndFunctions extends Component{
 // }
 // class ClassAndFunctions extends Component{
 //     render(){
-//         return <>
-//         <h1>Hello I am Class Component</h1>
-//         <A/>
-//         <B/>
-//         </>
+//         return(
+//          <>
+//           <h1>Hello I am Class Component</h1>
+//           <A/>
+//           <B/>
+//           </>
+//         )
 //     }
 
 // }
 
 //function component
 // function A(props){
-//     console.log(props)
-//     // props.firstName = "salim"; //props are immutable i.e read only property , we cannot change props
+//     // console.log(props)
+//     // props.firstName = "anas"; //props are immutable i.e read only property , we cannot change props
 //     return(
 //         <div>
 //             <h1>Hello I am function component A</h1>
@@ -262,15 +266,15 @@ class ClassAndFunctions extends Component{
 // const B = (props)=>{
 //     return(
 //         <div>
-//             <h1>Hello I am function component A</h1>
-//             <h2>{props.name}</h2>
+//             <h1>Hello I am function component B</h1>
+//             <h2>{props.names}</h2>
 //         </div>
 //     )
 // }
 
 // class C extends Component{
 //     render(){
-//         console.log(this.props);
+//         // console.log(this.props);
 //         const {age, someMath, someArray} = this.props;
 //         return(
 //             <div>
@@ -287,8 +291,8 @@ class ClassAndFunctions extends Component{
 //         return (
 //         <>
 //             <h1>Hello I am Class Component</h1>
-//             <A firstName="Haris" lastName="xyz"/>
-//             <B name="Aquib"/>
+//             <A firstName="faraz" lastName="xyz"/>
+//             <B names="uzair"/>
 //             <C age={23} someMath={1 + 3} someArray={[1, 2, 3]}/>
 //         </>
 //         )
@@ -312,9 +316,9 @@ class ClassAndFunctions extends Component{
 //       };
 //     }
 
-//     incrementCounter() {
-//         this.setState({counter: this.state.counter + 1})
-//     }
+//     // incrementCounter() {
+//     //     this.setState({counter: this.state.counter + 1})
+//     // }
 
 //     incrementCounter = () =>{
 //         this.setState({counter: this.state.counter + 1})
@@ -325,41 +329,40 @@ class ClassAndFunctions extends Component{
 //         <div>
 //           <h1>Hello state</h1>
 //           <h2>counter : {this.state.counter}</h2>
-//           <button type="button" onClick={() => {this.setState({counter: this.state.counter + 1})}}>Click Me 1</button>
-//           <button type="button" onClick={this.incrementCounter.bind(this)}>Click Me 2</button>
+//           {/* <button type="button" onClick={() => {this.setState({counter: this.state.counter + 1})}}>Click Me 1</button> */}
+//           {/* <button type="button" onClick={this.incrementCounter.bind(this)}>Click Me 2</button> */}
 //           <button type="button" onClick={this.incrementCounter}>Click Me 3</button>
 //         </div>
 //       );
 //     }
 //   }
 
-// class ClassAndFunctions extends Component {
-//     constructor(props) {
-//       super(props);
-//       this.state = {
-//         brand: "Ford",
-//         model: "Mustang",
-//         color: "red",
-//         year: 1964
-//       };
-//     }
-//     changeColor = () => {
-//       this.setState({color: "blue"});
-//     }
-//     render() {
-//       return (
-//         <div>
-//           <h1>My {this.state.brand}</h1>
-//           <p>
-//             It is a {this.state.color}
-//             {this.state.model}
-//             from {this.state.year}.
-//           </p>
-//           <button type="button" onClick={this.changeColor}>Change color</button>
-//         </div>
-//       );
-//     }
-//   }
+class ClassAndFunctions extends Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        brand: "Ford",
+        models: "Mustang",
+        color: "red",
+        year: 1964
+      };
+    }
+    changeColor = () => {
+      this.setState({color: "blue", brand: "bmw", year: "2023", models : "ford"});
+    }
+    
+    render() {
+      return (
+        <div>
+          <h1>My {this.state.brand}</h1>
+          <p>
+            It is a {this.state.color} {this.state.models} from {this.state.year}.
+          </p>
+          <button type="button" onClick={this.changeColor}>Change color</button>
+        </div>
+      );
+    }
+  }
 
 
 // how we can go about updating the Parent State from the Child Component. 
@@ -399,5 +402,5 @@ class ClassAndFunctions extends Component{
 //       )
 //   }
 
-}
+// }
 export default ClassAndFunctions;

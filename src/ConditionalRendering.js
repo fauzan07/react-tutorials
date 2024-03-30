@@ -10,7 +10,7 @@ class ConditionalRendering extends Component {
       };
     }
 
-    toggle = (event) =>{
+    abu = () =>{
         this.setState({showHeading: !this.state.showHeading})
     }
 
@@ -18,9 +18,10 @@ class ConditionalRendering extends Component {
       return (
         <div>
           <h1>Hello state</h1>
+          <h2>value : {this.state.value}</h2>
          {this.state.showHeading ?  <h2>value : {this.state.value}</h2> : <h2>No Heading</h2> }
          {/* {this.state.showHeading &&  <h2>value : {this.state.value}</h2>} */}
-          <button type="button" onClick={this.toggle}>Toggle Me</button>
+          <button type="button" onClick={this.abu}>Toggle Me</button>
         </div>
       );
     }

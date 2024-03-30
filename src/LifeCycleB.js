@@ -1,46 +1,29 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react';
 
-class LifecycleB extends Component {
+function LifecycleB() {
+  const [counter, setCounter] = useState(0);
 
-  constructor(props) {
-    super(props)
-    this.state = {
-      name: 'Vishwas'
-    }
-    console.log('LifecycleB constructor')
-  }
+  useEffect(() => {
+    console.log('Component did mount');
+    return () => {
+      console.log('Component will unmount');
+    };
+  }, []);
 
-  static getDerivedStateFromProps(props, state) {
-    console.log('LifecycleB getDerivedStateFromProps')
-    return null
-  }
+  useEffect(() => {
+    console.log('Component did update');
+  }, [counter]);
 
-  componentDidMount() {
-    console.log('LifecycleB componentDidMount')
-  }
+  console.log('Render called');
 
-//   shouldComponentUpdate() {
-//     console.log('LifecycleB shouldComponentUpdate')
-// 		return true
-// 	}
-
-// 	getSnapshotBeforeUpdate(prevProps, prevState) {
-//     console.log('LifecycleB getSnapshotBeforeUpdate')
-//     return null
-// 	}
-
-// 	componentDidUpdate(prevProps, prevState, snapshot) {
-// 		console.log('LifecycleB componentDidUpdate')
-// 	}
-
-  render() {
-    console.log('LifecycleB render')
-    return (
-      <div>
-        LifecycleB
-      </div>
-    )
-  }
+  return (
+    <div>
+      <p>Counter: {counter}</p>
+      <button onClick={() => setCounter(counter + 1)}>
+        Increment Counter
+      </button>
+    </div>
+  );
 }
 
-export default LifecycleB
+export default LifecycleB;
